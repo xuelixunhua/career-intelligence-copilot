@@ -1,69 +1,42 @@
-# Publishing Guide
+# 发布说明
 
-This repository is meant to be shareable without exposing personal job-search data.
+这个仓库更适合公开“方法”和 “skill”，不适合公开你的个人求职资料。
 
-## What Should Be Public
-
-Recommended for public GitHub:
+## 建议公开
 
 - `project-skill/`
 - `README.md`
 - `PUBLISHING.md`
 - `LICENSE`
-- `.gitignore`
-- redacted examples
+- 脱敏后的示例
 
-## What Should Stay Private
+## 不建议公开
 
-Keep these local or in a private repo:
+- `profile/`
+- `output/`
+- 原始抓取数据
+- 简历 PDF
+- 私人 Excel
+- 个人分析报告
 
-- browser login profiles
-- raw scraped datasets
-- personal resume PDFs
-- private spreadsheet workbooks
-- personal market analysis reports
+## 推送前检查
 
-## Recommended Public Framing
-
-This repository should be presented as:
-
-`a reusable Codex skill pattern for job-market intelligence`
-
-not as:
-
-`a dump of one person's private job-search materials`
-
-## Before You Push
-
-Run:
+先运行：
 
 ```powershell
 git status --short
 ```
 
-Make sure you do not see:
+确认没有这些内容：
 
-- `profile/`
-- `output/`
-- `.env`
-- resume PDFs
-- xlsx workbooks
-- raw csv exports
+- 登录态
+- 原始数据
+- 简历
+- 私人表格
 
-## Recommended Split
+## 最推荐的结构
 
-If you use this workflow long term, the cleanest setup is:
-
-### Public repo
-
-- reusable skill
-- documentation
-- redacted examples
-
-### Private repo
-
-- live datasets
-- personal reports
-- browser state
-- resume materials
-- workbook artifacts
+- `公开仓库`
+  - 放 skill、文档、示例
+- `私有仓库或本地项目`
+  - 放实际运行数据、登录态、个人材料

@@ -1,20 +1,18 @@
 # career-intelligence-copilot
 
-This is a project-local Codex skill for running an end-to-end career intelligence workflow.
+这是一个项目级 skill，用来把求职研究串成一条连续流程。
 
-It is meant for projects where job collection, market analysis, company ranking, and resume iteration should stay connected instead of being handled as isolated tasks.
+## 适合的任务
 
-## Core Outcomes
+- 抓取岗位
+- 维护主数据集
+- 做市场分析
+- 排企业优先级
+- 根据真实岗位反推简历修改方向
+- 维护 Excel 或决策面板
 
-Use this skill when you want Codex to help with:
+## 默认原则
 
-- collecting jobs from real websites
-- updating a deduplicated master dataset
-- analyzing market structure and role patterns
-- ranking companies based on fit and quality
-- reverse-engineering resume direction from real postings
-- maintaining a workbook or decision board
-
-## Key Constraint
-
-Resume recommendations and company ranking should be grounded in real sampled jobs whenever possible.
+- 优先使用真实岗位样本
+- 优先维护长期主数据集
+- 优先把结果沉淀回决策系统
