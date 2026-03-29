@@ -1,0 +1,39 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Local runtime data
+output/
+profile/
+tmp/
+logs/
+artifacts/
+*.log
+
+# Raw data exports
+*.csv
+*.json
+!examples/*.json
+
+# Office files
+*.xlsx
+*.xlsm
+*.pdf
+
+# Misc
+*.tmp
