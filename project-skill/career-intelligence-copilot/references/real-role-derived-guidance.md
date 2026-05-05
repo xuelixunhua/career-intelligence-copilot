@@ -1,49 +1,111 @@
-# Real Role Derived Guidance
+# Real-Role-Derived Guidance
 
-## Purpose
+Use this reference whenever the task involves resume advice, capability gaps, personal positioning, or company ranking.
 
-Use real job postings as the primary evidence source for:
+## Use Accepted Samples Only
 
-- company ranking
-- resume recommendations
-- capability gap analysis
+Base conclusions on accepted master-dataset rows.
 
-## Basic Method
+Do not use:
 
-### 1. Start with accepted samples
+- headhunter roles
+- anonymous companies
+- malformed company names
+- incomplete records
+- imagined target companies
 
-Base conclusions on clean, accepted records whenever possible.
+## Extract Role Signals
 
-### 2. Extract recurring signals
+For each refresh, extract repeated capability tags from:
 
-Look for repeated patterns such as:
+- job title
+- responsibilities
+- requirements
+- company context
+- salary and seniority signals
 
-- market research
-- execution
-- analytics
-- strategy
-- customer-side ownership
-- product collaboration
+Examples of useful tags:
+
+- market analysis / policy tracking
+- strategy design / risk control
+- transaction execution
+- user-side energy procurement
+- asset operation
+- model / algorithm / forecasting
+- product / platform / SaaS
+- solution consulting
 - team leadership
-- industry specialization
 
-### 3. Assign representative roles
+Do not treat keyword counts as the whole answer. Explain the business context in which a capability appears.
 
-When a company has multiple postings, choose the role that best represents:
+## Pick Representative Roles
 
-- the company's actual business direction
-- the user's likely target level
-- the most complete evidence
+Each ranked company needs one representative role.
 
-## Resume Reverse-Engineering
+Prefer roles that are:
 
-Turn real role signals into:
+- information-rich
+- close to the user's ability ceiling
+- central to the company's real business
+- useful for resume positioning
 
-- better title positioning
-- clearer capability pillars
-- stronger project examples
-- higher-level business language
+## Bucket Before Ranking
 
-## Warning
+Do not put every company into one undifferentiated score pool.
 
-If the user asks for company ranking or resume advice and the response ignores real sampled jobs that already exist in the project, the analysis is probably too generic.
+First bucket:
+
+- asset side
+- user side
+- technology / platform / solution side
+- integrated energy / aggregation / retail side
+
+Then compare within and across buckets.
+
+## Ranking Dimensions
+
+Use a multi-dimensional judgment:
+
+- ownership
+- base location
+- work intensity
+- salary and total-pay certainty
+- assets and moat
+- resume value
+- skill growth
+- career stability
+- overtime friendliness
+- personal fit
+
+The goal is not a fake-precise score. The goal is a useful target order.
+
+## Resume Advice
+
+Resume recommendations should map role demand to evidence:
+
+- business result
+- strategy design
+- rule or policy interpretation
+- risk control
+- model / data / forecasting collaboration
+- productization / solution packaging
+- reusable organizational assets
+
+Avoid vague advice. Every recommendation should answer:
+
+1. Which real postings ask for this?
+2. Why would this evidence increase fit?
+3. How can the user express it in resume or interview form?
+
+## Project Gap Suggestions
+
+Good project suggestions are specific enough to build or narrate:
+
+- user-side cost optimization
+- asset-side trading strategy
+- storage or ancillary-service revenue optimization
+- market-rule monitoring system
+- forecasting and backtesting workflow
+- job-specific product or solution demo
+
+Tie each suggestion to role clusters observed in the current dataset.

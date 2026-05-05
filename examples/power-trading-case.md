@@ -1,25 +1,42 @@
 # Example Case: Beijing Power Trading Workflow
 
-One concrete use case for this repository is a power trading job-search workflow:
+This repository can be used for a power-trading job-search workflow.
 
-1. collect Beijing power trading roles from Boss and Liepin
-2. remove headhunters and anonymous companies
-3. maintain a weekly master dataset
-4. analyze company type, pay band, and role structure
-5. rank real companies based on fit and market quality
-6. reverse-engineer resume upgrades from real role requirements
+The example is intentionally domain-specific, but all data here is illustrative and sanitized.
 
-This example is intentionally domain-specific.
+## Workflow
 
-The repository itself is broader:
+1. Collect Beijing power-trading roles from Boss Zhipin and Liepin.
+2. Remove headhunters, anonymous companies, and parsing-noise records.
+3. Normalize accepted postings into an incoming JSON file.
+4. Merge incoming rows into a guarded master dataset.
+5. Analyze market structure, company type, salary band, and role requirements.
+6. Rank real companies by fit, risk, pay certainty, and capability growth.
+7. Reverse-engineer resume and portfolio upgrades from real role requirements.
 
-- the same pipeline can be adapted to product jobs
-- strategy jobs
-- data jobs
-- sector-specific hiring markets
+## Example Search Keywords
 
-The point is not the domain.
+- `电力交易`
+- `AI 电力交易`
+- `power trading`
+- `energy trading`
 
-The point is the workflow:
+## Example Role Buckets
 
-`real postings -> structured market view -> personal decision support`
+- asset-side trading strategy
+- user-side energy procurement
+- storage and ancillary-services optimization
+- trading platform product / solution roles
+- integrated energy and aggregation roles
+
+## Why This Example Matters
+
+The domain is not the point.
+
+The reusable pattern is:
+
+```text
+real postings -> normalized dataset -> market structure -> decision board -> resume evidence
+```
+
+For another domain, replace the keywords, company buckets, scoring criteria, and resume-evidence mapping.

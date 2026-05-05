@@ -6,6 +6,9 @@
 # Python
 __pycache__/
 *.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .venv/
 venv/
 
@@ -13,27 +16,45 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Environment variables
+# Environment variables and secrets
 .env
-.env.local
+.env.*
+!.env.example
 
-# Local runtime data
-output/
+# Runtime browser state
 profile/
+profiles/
+browser-profile/
+chrome-profile/
+
+# Local generated data
+output/
+outputs/
 tmp/
 logs/
 artifacts/
+backups/
 *.log
 
-# Raw data exports
+# Raw exports and generated datasets
 *.csv
 *.json
 !examples/*.json
 
-# Office files
+# Private office and resume files
 *.xlsx
 *.xlsm
+*.xls
+*.doc
+*.docx
 *.pdf
+
+# Private workspaces
+private/
+personal/
+interviews/
+offers/
+resumes/
 
 # Misc
 *.tmp

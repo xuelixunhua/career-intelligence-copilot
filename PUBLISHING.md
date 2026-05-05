@@ -1,42 +1,71 @@
-# 发布说明
+# Publishing Guide
 
-这个仓库更适合公开“方法”和 “skill”，不适合公开你的个人求职资料。
+This repository is meant to publish the reusable workflow, not a personal job-search archive.
 
-## 建议公开
+## Publish
 
-- `project-skill/`
-- `README.md`
-- `PUBLISHING.md`
-- `LICENSE`
-- 脱敏后的示例
+- skill instructions
+- reference rules
+- safe merge scripts
+- sanitized examples
+- generic setup documentation
 
-## 不建议公开
+## Keep Private
 
-- `profile/`
-- `output/`
-- 原始抓取数据
-- 简历 PDF
-- 私人 Excel
-- 个人分析报告
+- browser profiles and cookies
+- raw scraped postings
+- master datasets from a real search
+- generated market and personal-positioning reports
+- resumes, interview notes, offer notes, compensation records
+- private Excel workbooks
 
-## 推送前检查
+## Replacement Policy
 
-先运行：
+When replacing an older public version, replace the content in this repository instead of creating a new GitHub project.
+
+Before pushing, verify that the staged diff contains only the public layer:
 
 ```powershell
 git status --short
+git diff --cached --stat
+git diff --cached --name-only
 ```
 
-确认没有这些内容：
+Stop before pushing if any of these appear:
 
-- 登录态
-- 原始数据
-- 简历
-- 私人表格
+- `profile/`
+- `output/`
+- `tmp/`
+- `private/`
+- real resumes
+- real reports
+- real datasets
+- browser cache or account files
+- personal salary or offer notes
 
-## 最推荐的结构
+## Suggested Public Structure
 
-- `公开仓库`
-  - 放 skill、文档、示例
-- `私有仓库或本地项目`
-  - 放实际运行数据、登录态、个人材料
+```text
+project-skill/
+scripts/
+examples/
+README.md
+PUBLISHING.md
+LICENSE
+.gitignore
+```
+
+## Suggested Private Structure
+
+```text
+profile/
+output/
+tmp/
+private/
+workbook.xlsx
+resume/
+interviews/
+offers/
+```
+
+The public repository explains how the system works. The private workspace contains the user's data.
